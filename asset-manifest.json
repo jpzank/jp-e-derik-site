@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jpzank/jp-e-derik-site.git/static/css/main.63d4f1b6.css",
-    "main.js": "/jpzank/jp-e-derik-site.git/static/js/main.71d76604.js",
-    "static/js/453.26a597fd.chunk.js": "/jpzank/jp-e-derik-site.git/static/js/453.26a597fd.chunk.js",
-    "index.html": "/jpzank/jp-e-derik-site.git/index.html",
-    "main.63d4f1b6.css.map": "/jpzank/jp-e-derik-site.git/static/css/main.63d4f1b6.css.map",
-    "main.71d76604.js.map": "/jpzank/jp-e-derik-site.git/static/js/main.71d76604.js.map",
-    "453.26a597fd.chunk.js.map": "/jpzank/jp-e-derik-site.git/static/js/453.26a597fd.chunk.js.map"
+    "main.css": "https://jpzank.github.io/jp-e-derik-site/static/css/main.63d4f1b6.css",
+    "main.js": "https://jpzank.github.io/jp-e-derik-site/static/js/main.15d7d759.js",
+    "static/js/453.26a597fd.chunk.js": "https://jpzank.github.io/jp-e-derik-site/static/js/453.26a597fd.chunk.js",
+    "index.html": "https://jpzank.github.io/jp-e-derik-site/index.html",
+    "main.63d4f1b6.css.map": "https://jpzank.github.io/jp-e-derik-site/static/css/main.63d4f1b6.css.map",
+    "main.15d7d759.js.map": "https://jpzank.github.io/jp-e-derik-site/static/js/main.15d7d759.js.map",
+    "453.26a597fd.chunk.js.map": "https://jpzank.github.io/jp-e-derik-site/static/js/453.26a597fd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.63d4f1b6.css",
-    "static/js/main.71d76604.js"
+    "static/js/main.15d7d759.js"
   ]
 }
