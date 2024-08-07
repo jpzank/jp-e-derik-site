@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://jpzank.github.io/jp-e-derik-site/static/css/main.36b29b68.css",
-    "main.js": "https://jpzank.github.io/jp-e-derik-site/static/js/main.1f3da890.js",
+    "main.js": "https://jpzank.github.io/jp-e-derik-site/static/js/main.e6788e6c.js",
     "reactPlayerYouTube.js": "https://jpzank.github.io/jp-e-derik-site/static/js/reactPlayerYouTube.4c4d296f.chunk.js",
     "reactPlayerSoundCloud.js": "https://jpzank.github.io/jp-e-derik-site/static/js/reactPlayerSoundCloud.a60b83e3.chunk.js",
     "reactPlayerVimeo.js": "https://jpzank.github.io/jp-e-derik-site/static/js/reactPlayerVimeo.8fe17672.chunk.js",
@@ -20,7 +20,7 @@
     "static/media/JPD_Sobre.png": "https://jpzank.github.io/jp-e-derik-site/static/media/JPD_Sobre.8737164b089f9fddcd16.png",
     "index.html": "https://jpzank.github.io/jp-e-derik-site/index.html",
     "main.36b29b68.css.map": "https://jpzank.github.io/jp-e-derik-site/static/css/main.36b29b68.css.map",
-    "main.1f3da890.js.map": "https://jpzank.github.io/jp-e-derik-site/static/js/main.1f3da890.js.map",
+    "main.e6788e6c.js.map": "https://jpzank.github.io/jp-e-derik-site/static/js/main.e6788e6c.js.map",
     "reactPlayerYouTube.4c4d296f.chunk.js.map": "https://jpzank.github.io/jp-e-derik-site/static/js/reactPlayerYouTube.4c4d296f.chunk.js.map",
     "reactPlayerSoundCloud.a60b83e3.chunk.js.map": "https://jpzank.github.io/jp-e-derik-site/static/js/reactPlayerSoundCloud.a60b83e3.chunk.js.map",
     "reactPlayerVimeo.8fe17672.chunk.js.map": "https://jpzank.github.io/jp-e-derik-site/static/js/reactPlayerVimeo.8fe17672.chunk.js.map",
@@ -39,6 +39,6 @@
   },
   "entrypoints": [
     "static/css/main.36b29b68.css",
-    "static/js/main.1f3da890.js"
+    "static/js/main.e6788e6c.js"
   ]
 }
