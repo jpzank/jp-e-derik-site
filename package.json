@@ -2,7 +2,7 @@
   "name": "jp-e-derik-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/jpzank/jp-e-derik-site.git",
+  "homepage": "https://jpederik.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -10,12 +10,15 @@
     "lucide-react": "^0.414.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-modal": "^3.16.1",
+    "react-player": "^2.16.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start --host 0.0.0.0",
+    "build": "PUBLIC_URL=https://jpzank.github.io/jp-e-derik-site/ react-scripts build",
+    "postbuild": "cp public/Background.png build/",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
