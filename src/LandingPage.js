@@ -293,7 +293,13 @@ const LandingPage = () => {
           {/* Hero section content */}
           <div className="relative z-10 text-center animate-fadeIn">
             <p className="hero-text text-2xl md:text-3xl mb-8 animate-slideUp">Seu evento em uma verdadeira experiência</p>
-            <div className="flex justify-center">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+              <a 
+                href="#contact"
+                className="primary-button inline-block bg-white/90 text-black px-8 py-3 rounded-full text-lg hover:bg-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/20 animate-slideUp"
+              >
+                Contrate Nosso Show
+              </a>
               <button
                 onClick={() => {
                   const musicSection = document.getElementById('music');
@@ -305,7 +311,7 @@ const LandingPage = () => {
                     }
                   }
                 }}
-                className="primary-button flex items-center gap-2 px-8 py-3 rounded-full bg-white/90 text-black hover:bg-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/20 animate-slideUp group"
+                className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-gray-800/90 to-gray-900/90 hover:from-gray-700 hover:to-gray-800 text-white/90 hover:text-white border border-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/10 animate-slideUp group backdrop-blur-sm"
               >
                 <Play size={20} className="transform transition-transform duration-300 group-hover:scale-110" />
                 <span>Ouvir Agora</span>
