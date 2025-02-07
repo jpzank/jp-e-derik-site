@@ -24,6 +24,11 @@ const Dashboard = () => {
   const [isLocked, setIsLocked] = useState(false);
   const [lockoutTimeRemaining, setLockoutTimeRemaining] = useState(0);
 
+  // Debug log for password check
+  useEffect(() => {
+    console.log('Expected password:', process.env.REACT_APP_DASHBOARD_PASSWORD);
+  }, []);
+
   // Update countdown timer when locked out
   useEffect(() => {
     let timer;
