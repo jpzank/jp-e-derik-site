@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import ReactPlayer from 'react-player';
 import Modal from 'react-modal';
-import { Play, Instagram, Youtube, Twitter, Menu, X, Youtube as YoutubeIcon, Music as AppleMusicIcon, Music2 as DeezerIcon, Music3 as TidalIcon, Music4 as AmazonMusicIcon } from 'lucide-react';
+import { Play, Instagram, Youtube, Twitter, Menu, Youtube as YoutubeIcon, Music as AppleMusicIcon, Music2 as DeezerIcon, Music3 as TidalIcon, Music4 as AmazonMusicIcon } from 'lucide-react';
+import ReactGA from 'react-ga4';
 
 // Image component with debugging and error handling
 const ImageWithFallback = ({ src, alt, className, style, fallbackSrc = '/Sotaque_Aguarde.png', ...props }) => {
@@ -127,6 +128,29 @@ const LandingPage = () => {
   const [isSpotifyPlaying, setIsSpotifyPlaying] = useState(false);
   const videoRef = useRef(null);
   const spotifyRef = useRef(null);
+
+  // Track page views
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
+
+  // Track button clicks
+  const trackButtonClick = (buttonName) => {
+    ReactGA.event({
+      category: 'User Interaction',
+      action: 'Button Click',
+      label: buttonName
+    });
+  };
+
+  // Track video plays
+  const trackVideoPlay = (videoName) => {
+    ReactGA.event({
+      category: 'Media',
+      action: 'Video Play',
+      label: videoName
+    });
+  };
 
   // Add scroll event listener
   useEffect(() => {
@@ -436,7 +460,10 @@ const LandingPage = () => {
                     <h3 className="text-lg font-semibold text-gray-100">{song.title}</h3>
                   </div>
                   <button 
-                    onClick={() => toggleVideo(song)}
+                    onClick={() => {
+                      trackButtonClick('Play Song');
+                      toggleVideo(song);
+                    }}
                     className="karaoke-button flex items-center justify-between w-full p-3 text-left bg-white/10 hover:bg-white/20 transition-all duration-300 rounded-lg group"
                   >
                     <span className="text-sm font-medium text-gray-200 group-hover:text-white">Cantar Agora!</span>
@@ -618,6 +645,7 @@ const LandingPage = () => {
               onReady={() => {
                 const loader = document.querySelector('.video-loading');
                 if (loader) loader.style.display = 'none';
+                trackVideoPlay(activeSong.title);
               }}
             />
           </div>
